@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="WandX">
+      <UniqueIdentifier>{b178b8ff-e82e-4d16-93ba-e2abeda0374f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32">
+      <UniqueIdentifier>{e6fe6551-8580-400e-9a58-0c0d99c0e448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Console">
+      <UniqueIdentifier>{e80a297b-d813-4d1a-8b80-6012a2c5552c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Controls">
+      <UniqueIdentifier>{dcfb5a54-c2e4-4b09-8e2d-91d8ec37dafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Dialogs">
+      <UniqueIdentifier>{55ed8834-68c9-4ce9-a915-47653723c70d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\File">
+      <UniqueIdentifier>{89ba140f-0c9f-4be2-9a37-d5b62c54e8cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\GDI">
+      <UniqueIdentifier>{549fd071-f286-4ac7-892b-be4ee746eed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Realtime">
+      <UniqueIdentifier>{b1a2f977-7bc5-4f33-bb74-0d799435e1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\String">
+      <UniqueIdentifier>{ca4de047-1ad6-4e25-bb1a-da4463c929fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Resources">
+      <UniqueIdentifier>{2568e747-959a-4658-93df-dfe692554ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Security">
+      <UniqueIdentifier>{7962670f-00b8-4303-9fb9-3404bc6bb786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Internet">
+      <UniqueIdentifier>{24499dbb-b53e-4480-bf70-41135da47a10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Types">
+      <UniqueIdentifier>{76c8f168-010d-484a-bd20-4e8f0156421f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Entrances">
+      <UniqueIdentifier>{a4c63403-40b6-423d-9710-ca303fb24c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WandX.Win32\Window">
+      <UniqueIdentifier>{54b88c9c-21f7-4892-b798-693fc6cc10af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\WandX\WandX.cppm">
+      <Filter>WandX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.cppm">
+      <Filter>WandX.Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Console.cppm">
+      <Filter>WandX.Win32\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.GDI.cppm">
+      <Filter>WandX.Win32\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Realtime.cppm">
+      <Filter>WandX.Win32\Realtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.String.cppm">
+      <Filter>WandX.Win32\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Types.cppm">
+      <Filter>WandX.Win32\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Security.cppm">
+      <Filter>WandX.Win32\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Resources.cppm">
+      <Filter>WandX.Win32\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Internet.cppm">
+      <Filter>WandX.Win32\Internet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.File.cppm">
+      <Filter>WandX.Win32\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Exe.cpp">
+      <Filter>WandX.Win32\Entrances</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Dialogs.cppm">
+      <Filter>WandX.Win32\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WandX.Win32\WandX.Win32.Window.cppm">
+      <Filter>WandX.Win32\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="WandX.Win32.Samples.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\WandX\WandX.h">
+      <Filter>WandX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Console.idl">
+      <Filter>WandX.Win32\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Controls.idl">
+      <Filter>WandX.Win32\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Dialogs.idl">
+      <Filter>WandX.Win32\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.File.idl">
+      <Filter>WandX.Win32\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.GDI.idl">
+      <Filter>WandX.Win32\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Realtime.idl">
+      <Filter>WandX.Win32\Realtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Window.idl">
+      <Filter>WandX.Win32\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Types.idl">
+      <Filter>WandX.Win32\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Resources.idl">
+      <Filter>WandX.Win32\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Security.idl">
+      <Filter>WandX.Win32\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.h">
+      <Filter>WandX.Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Console.h">
+      <Filter>WandX.Win32\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Controls.h">
+      <Filter>WandX.Win32\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Dialogs.h">
+      <Filter>WandX.Win32\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.GDI.h">
+      <Filter>WandX.Win32\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Realtime.h">
+      <Filter>WandX.Win32\Realtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.String.h">
+      <Filter>WandX.Win32\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Window.h">
+      <Filter>WandX.Win32\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Types.h">
+      <Filter>WandX.Win32\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Security.h">
+      <Filter>WandX.Win32\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Resources.h">
+      <Filter>WandX.Win32\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Internet.h">
+      <Filter>WandX.Win32\Internet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.File.h">
+      <Filter>WandX.Win32\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Dll.h">
+      <Filter>WandX.Win32\Entrances</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WandX.Win32\WandX.Win32.Internet.idl">
+      <Filter>WandX.Win32\Internet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\WandX.Win32\WandX.Win32.Controls.Messages.inl">
+      <Filter>WandX.Win32\Controls</Filter>
+    </None>
+    <None Include="..\WandX.Win32\WandX.Win32.Window.Messages.inl">
+      <Filter>WandX.Win32\Window</Filter>
+    </None>
+  </ItemGroup>
+</Project>

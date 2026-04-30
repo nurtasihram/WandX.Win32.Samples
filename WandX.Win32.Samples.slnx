@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="WandX.Win32.Samples/WandX.Win32.Samples.vcxproj" />
+</Solution>

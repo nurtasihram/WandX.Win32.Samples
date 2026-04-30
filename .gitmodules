@@ -1,0 +1,6 @@
+[submodule "WandX"]
+	path = WandX
+	url = https://github.com/nurtasihram/WandX
+[submodule "WandX.Win32"]
+	path = WandX.Win32
+	url = https://github.com/nurtasihram/WandX.Win32
