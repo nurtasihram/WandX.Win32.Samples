@@ -68,6 +68,7 @@
   <ItemGroup>
     <None Include="..\WandX.Win32\WandX.Win32.Controls.Messages.inl" />
     <None Include="..\WandX.Win32\WandX.Win32.Window.Messages.inl" />
+    <None Include="make_test.bat" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

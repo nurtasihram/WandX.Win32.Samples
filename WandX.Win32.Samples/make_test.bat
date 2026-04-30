@@ -13,7 +13,6 @@ if /i "%1" == "clean" (
 	set clear_path=!clear_path! "!workspace!\x64"
 	set clear_path=!clear_path! "!workspace!\Debug"
 	set clear_path=!clear_path! "!workspace!\Release"
-	set clear_path=!clear_path! "!workspace!\wx_test"
 	set clear_path=!clear_path! "!workspace!\build"
 	for %%p in (!clear_path!) do (
 		if exist %%p rmdir %%p /s /q && echo clean and remove folder %%p
@@ -29,21 +28,22 @@ if /i "%1" == "clean" (
 	pushd "!build_dir!"
 	set build_pushed=1
 	set module_files=
-	set module_files=!module_files! "!global_dir!\WandX.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.String.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.Type.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.Console.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.Realtime.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.File.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.GDI.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.Resource.cppm"
-	set module_files=!module_files! "!global_dir!\WandX.Win32.Security.cppm"
-	rem set module_files=!module_files! "!global_dir!\WandX.Win32.Window.cppm" 
-	rem set module_files=!module_files! "!global_dir!\WandX.Win32.Control.cppm"
-	set source_files=!module_files! "!workspace!\wx_test.cpp"
-	set source_files=!source_files! "!global_dir!\WandX.Win32.Main.cpp"
-	set include_paths=-I"!global_dir!"
+	set module_files=!module_files! "!global_dir!\WandX\WandX.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.String.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Types.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.File.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Console.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Security.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Realtime.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Resources.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.GDI.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Window.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Dialogs.cppm"
+	set module_files=!module_files! "!global_dir!\WandX.Win32\WandX.Win32.Internet.cppm"
+	set source_files=!module_files! "!workspace!\WandX.Win32.Samples.cpp"
+	set source_files=!source_files! "!global_dir!\WandX.Win32\WandX.Win32.Exe.cpp"
+	set include_paths=-I"!global_dir!" -I"!global_dir!\WandX" -I"!global_dir!\WandX.Win32"
 	if /i "%2" == "clang" (
 		set compiler=clang++
 		set compile_mod=-std=c++2a -fmodules -fprebuilt-module-path="./" --precompile
@@ -91,8 +91,8 @@ if /i "%1" == "clean" (
 	for %%i in (*.o) do (
 		set object_files=!object_files! %%i
 	)
-	echo !compiler! !object_files! -o wx_test.exe !link_args!
-	!compiler! !object_files! -o wx_test.exe !link_args! || echo Link failed && goto end
+	echo !compiler! !object_files! -o WandX.Win32.Samples.exe !link_args!
+	!compiler! !object_files! -o WandX.Win32.Samples.exe !link_args! || echo Link failed && goto end
 	echo -- Compilation built
 ) else (
 	if not "%1" == "" (

@@ -179,5 +179,6 @@
     <None Include="..\WandX.Win32\WandX.Win32.Window.Messages.inl">
       <Filter>WandX.Win32\Window</Filter>
     </None>
+    <None Include="make_test.bat" />
   </ItemGroup>
 </Project>
